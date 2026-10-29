@@ -1,0 +1,21 @@
+RAGTruth Dataset Inspection
+==============================
+Total source records: 2965
+Total response records: 17790
+Good-quality responses used: 17617
+Responses with at least one unsupported span: 7641
+Hallucination rate: 43.37%
+Responses changed by safe normalization: 7869
+
+Responses by generating model:
+- llama-2-13b-chat: 2959
+- llama-2-70b-chat: 2958
+- llama-2-7b-chat: 2946
+- gpt-4-0613: 2937
+- mistral-7B-instruct: 2911
+- gpt-3.5-turbo-0613: 2906
+
+Source records by task type:
+- Data2txt: 1033
+- QA: 989
+- Summary: 943

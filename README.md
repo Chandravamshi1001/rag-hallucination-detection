@@ -31,3 +31,16 @@ The project uses the RAGTruth dataset, which contains retrieved source informati
 2. Build a TF-IDF similarity baseline
 3. Evaluate a pretrained Natural Language Inference model
 4. Analyze errors involving irrelevant evidence and subtle factual changes
+
+# Data
+
+This project uses the RAGTruth dataset.
+
+Download the dataset from:
+
+https://github.com/ParticleMedia/RAGTruth
+
+The raw `.jsonl` files are intentionally excluded from this repository.
+They can be found in the downloaded RAGTruth repository under:
+
+RAGTruth/dataset/

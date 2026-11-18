@@ -1,0 +1,40 @@
+RAGTruth Claim Dataset Summary
+Total good-quality responses: 17,617
+Total generated claims: 130,807
+Supported claims: 116,891
+Unsupported claims: 13,916
+Claim-level hallucination rate: 10.64%
+Null-based hallucinations (original spans): 1,641
+Claims overlapping null-based hallucinations: 1,400
+Span text validation issues: 0
+
+Validation holds 251 of 2515 original training sources using deterministic SHA-256 ordering. Original test split preserved.
+Claims by split:
+- train: 100,906
+- validation: 10,932
+- test: 18,969
+
+Claims by task type:
+- Data2txt: 57,076 total, 49,214 supported, 7,862 unsupported
+- QA: 41,657 total, 37,641 supported, 4,016 unsupported
+- Summary: 32,074 total, 30,036 supported, 2,038 unsupported
+
+Hallucination types (original spans and overlapping claims):
+- Evident Baseless Info: 6,205 spans, 6,922 claims
+- Evident Conflict: 5,306 spans, 4,914 claims
+- Subtle Baseless Info: 2,514 spans, 2,540 claims
+- Subtle Conflict: 201 spans, 208 claims
+
+Supported claim example:
+claim_id: "0:1"
+claim_start: 0
+claim_end: 142
+claim_text: "The Anne Frank House has revealed that Anne Frank and her older sister, Margot, likely died at least a month earlier than previously believed."
+hallucination_spans: []
+
+Unsupported claim example:
+claim_id: "2:4"
+claim_start: 537
+claim_end: 653
+claim_text: "The sisters contracted typhus, which was rampant in the camp, and are believed to have died before February 7, 2022."
+hallucination_spans: [{"start": 636, "end": 653, "text": "February 7, 2022.", "meta": "EVIDENT CONFLICT\nOriginal: February 7 (1945)\nGenerated: February 7, 2022", "label_type": "Evident Conflict", "implicit_true": false, "due_to_null": false}, {"start": 607, "end": 646, "text": "believed to have died before February 7", "meta": "EVIDENT CONFLICT\nOriginal:  exact dates of death for Anne and Margot remain unclear; sisters both had symptoms before February 7\nGenerated: believed to have died before February 7", "label_type": "Evident Conflict", "implicit_true": false, "due_to_null": false}]

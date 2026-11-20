@@ -1,0 +1,50 @@
+RAGTruth TF-IDF evidence-retrieval baseline
+Training: 100,906 claims, 2,264 sources, 9,946 chunks used to fit TF-IDF.
+Context chunks: up to 120 whitespace-delimited words with 30-word overlap. Chunk indices are zero-based.
+Case-sensitive word unigrams and bigrams retain numbers and negation. Each claim is compared only with chunks from its own source.
+Positive class: unsupported. Predict unsupported when similarity < threshold.
+Best validation threshold: 0.06996055934632602
+Best validation F1: 0.278810 (10,932 claims).
+Validation ties use the smallest cutoff.
+
+Test overall
+Claims: 18,969 (1,560 unsupported)
+Accuracy: 0.699141
+Precision: 0.148142
+Recall: 0.559615
+F1: 0.234268
+ROC-AUC (negative similarity): 0.688962
+Confusion matrix (rows true, columns predicted; supported, unsupported):
+[[12389, 5020], [687, 873]]
+
+Test QA
+Claims: 5,737 (366 unsupported)
+Accuracy: 0.845215
+Precision: 0.118421
+Recall: 0.221311
+F1: 0.154286
+ROC-AUC (negative similarity): 0.731413
+Confusion matrix (rows true, columns predicted; supported, unsupported):
+[[4768, 603], [285, 81]]
+
+Test Summary
+Claims: 5,002 (258 unsupported)
+Accuracy: 0.872251
+Precision: 0.069977
+Recall: 0.120155
+F1: 0.088445
+ROC-AUC (negative similarity): 0.621233
+Confusion matrix (rows true, columns predicted; supported, unsupported):
+[[4332, 412], [227, 31]]
+
+Test Data2txt
+Claims: 8,230 (936 unsupported)
+Accuracy: 0.492102
+Precision: 0.159673
+Recall: 0.813034
+F1: 0.266924
+ROC-AUC (negative similarity): 0.669971
+Confusion matrix (rows true, columns predicted; supported, unsupported):
+[[3289, 4005], [175, 761]]
+
+This baseline measures retrieval similarity. High similarity does not prove factual support. A similar claim can still hallucinate by changing a date, number, name, negation, or null/unknown value.

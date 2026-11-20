@@ -1,0 +1,96 @@
+RAGTruth hybrid evidence-grounded detector
+NLI checkpoint: Sayan01/tiny-bert-mnli-distilled; CPU threads: 4; batch: 16.
+L2 logistic regression and feature encoding fitted on training claims only.
+Validation maximizes unsupported F1. Ties use the smallest cutoff.
+Prediction is unsupported when support (1 minus P(unsupported)) is below the cutoff.
+Best validation threshold: 0.8146462693397483
+Best validation F1: 0.338319
+Retrieval and all factual cues use only the claim and its own top-three source chunks.
+Factual cues are approximate. Surface mismatches and chunk-level unknowns are soft features.
+The evidence displayed is the strongest-entailment chunk; the classifier uses all three.
+ROC-AUC uses negative support/similarity. Matrix rows are true, columns predicted, supported first.
+
+Overall
+Model        Accuracy  Precision     Recall         F1    ROC-AUC  Confusion matrix
+TF-IDF       0.699141   0.148142   0.559615   0.234268   0.688962  [[12389, 5020], [687, 873]]
+TinyBERT     0.698245   0.134095   0.489103   0.210483   0.669124  [[12482, 4927], [797, 763]]
+Hybrid       0.840635   0.233515   0.410897   0.297793   0.767604  [[15305, 2104], [919, 641]]
+
+QA
+Model        Accuracy  Precision     Recall         F1    ROC-AUC  Confusion matrix
+TF-IDF       0.845215   0.118421   0.221311   0.154286   0.731413  [[4768, 603], [285, 81]]
+TinyBERT     0.781942   0.149644   0.516393   0.232044   0.748752  [[4297, 1074], [177, 189]]
+Hybrid       0.897333   0.280079   0.387978   0.325315   0.835872  [[5006, 365], [224, 142]]
+
+Summary
+Model        Accuracy  Precision     Recall         F1    ROC-AUC  Confusion matrix
+TF-IDF       0.872251   0.069977   0.120155   0.088445   0.621233  [[4332, 412], [227, 31]]
+TinyBERT     0.762095   0.091944   0.406977   0.150000   0.656271  [[3707, 1037], [153, 105]]
+Hybrid       0.894442   0.142857   0.209302   0.169811   0.709319  [[4420, 324], [204, 54]]
+
+Data2txt
+Model        Accuracy  Precision     Recall         F1    ROC-AUC  Confusion matrix
+TF-IDF       0.492102   0.159673   0.813034   0.266924   0.669971  [[3289, 4005], [175, 761]]
+TinyBERT     0.601094   0.142770   0.501068   0.222222   0.589033  [[4478, 2816], [467, 469]]
+Hybrid       0.768408   0.239247   0.475427   0.318312   0.719030  [[5879, 1415], [491, 445]]
+
+Unsupported log-odds coefficients
+Intercept: -0.265271
+best_entailment_anchors_coverage: -0.439495
+best_entailment_anchors_unmatched: -0.242978
+best_entailment_evidence_unknown: +0.465444
+best_entailment_mentioned_null_field: -0.262072
+best_entailment_month_days_coverage: +0.166344
+best_entailment_month_days_unmatched: +0.150716
+best_entailment_names_coverage: -0.036643
+best_entailment_names_unmatched: +0.250668
+best_entailment_negation_mismatch: -0.055597
+best_entailment_numbers_coverage: +0.497604
+best_entailment_numbers_unmatched: +0.326654
+best_entailment_specific_date_with_unknown: -0.693226
+best_entailment_tokens_coverage: +0.081606
+best_entailment_years_coverage: +0.211159
+best_entailment_years_unmatched: +0.166702
+best_tfidf_similarity: -1.943851
+claim_has_month_days: +0.322456
+claim_has_names: -0.058196
+claim_has_numbers: -1.914785
+claim_has_years: +0.433139
+claim_negation: +0.202074
+claim_unknown: -0.259678
+nli_contradiction: -0.293444
+nli_entailment: -0.233848
+nli_max_contradiction: +0.441543
+nli_max_neutral: +0.557971
+nli_neutral: +0.298685
+retrieved_chunk_fraction: -1.264278
+top3_max_anchors_coverage: -0.229954
+top3_max_anchors_unmatched: +1.084505
+top3_max_evidence_unknown: -0.442585
+top3_max_mentioned_null_field: +2.809059
+top3_max_month_days_coverage: -0.902319
+top3_max_month_days_unmatched: +0.094061
+top3_max_names_coverage: -0.145148
+top3_max_names_unmatched: +0.073765
+top3_max_negation_mismatch: -0.154398
+top3_max_numbers_coverage: +0.907528
+top3_max_numbers_unmatched: -0.051182
+top3_max_specific_date_with_unknown: +0.233908
+top3_max_tokens_coverage: -2.013021
+top3_max_years_coverage: -1.018576
+top3_max_years_unmatched: +0.203551
+top3_min_anchors_coverage: +0.281869
+top3_min_anchors_unmatched: +0.091979
+top3_min_evidence_unknown: +0.394547
+top3_min_mentioned_null_field: -0.311205
+top3_min_month_days_coverage: +0.206922
+top3_min_month_days_unmatched: +1.243598
+top3_min_names_coverage: +0.395666
+top3_min_names_unmatched: +0.141679
+top3_min_negation_mismatch: -0.047968
+top3_min_numbers_coverage: +0.316238
+top3_min_numbers_unmatched: +1.153494
+top3_min_specific_date_with_unknown: -0.062522
+top3_min_tokens_coverage: +0.333465
+top3_min_years_coverage: +0.238173
+top3_min_years_unmatched: +1.302600

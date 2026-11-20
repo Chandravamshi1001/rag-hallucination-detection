@@ -1,0 +1,156 @@
+Contributions are feature value times coefficient, in unsupported log odds.
+Intercept: -0.265271.
+
+False positives (showing 5 of 2,104)
+
+58:6 (Summary, source 15601) support=0.775625
+Claim: The case is significant because it highlights the importance of accurate reporting and the potential consequences of spreading false information.
+Chunk 2 (E=0.0001, C=0.0001, N=0.9997): protected under not only the First Amendment to the United States Constitution, but also the Virginia Constitution. True statements cannot be defamatory. Neither can pure statements of opinion, because they theoretically cannot be either true or false. But the Rolling Stone article certainly purported to be fact, and it apparently is not exactly what the law considers "true." The individual members of the fraternity will likely be considered private individuals, and not public figures; the latter have a harder time proving defamation. A private person suing for defamation must establish that the defendant has published a false factual statement that is about the person and that it also harms the person's reputation. The private plaintiff also must show that the
+Chunk 0 (E=0.0001, C=0.0000, N=0.9999): According to an outside review by Columbia Journalism School professors, "(a)n institutional failure at Rolling Stone resulted in a deeply flawed article about a purported gang rape at the University of Virginia." The Columbia team concluded that "The failure encompassed reporting, editing, editorial supervision and fact-checking." Hardly a ringing endorsement of the editorial process at the publication. The magazine's managing editor, Will Dana, wrote, "We would like to apologize to our readers and to all of those who were damaged by our story and the ensuing fallout, including members of the Phi Kappa Psi fraternity and UVA administrators and students." Brian Stelter: Fraternity to 'pursue all available legal action' The next question is:. Can UVA, Phi Kappa Psi or any
+Chunk 9 (E=0.0002, C=0.0002, N=0.9996): calls you a loser on Twitter, you're going to have to spend money on an expert to explain to a jury how that actually damaged you financially. And since most of the people who waste time threatening each other with defamation suits  on Facebook live in their moms' basements and are "between jobs," these are not the kind of people who have money or reputation to damage in the first place. The UVA situation is not your run-of-the-mill defamation case. The university won't be able to sue, but if the members of the fraternity can get past some of the preliminary hurdles of a defamation claim, and they can make a tangible case for damages, then this could be one
+Largest feature contributions:
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  nli_max_neutral=0.9999, contribution=+0.5579
+  top3_max_tokens_coverage=0.1667, contribution=-0.3355
+  nli_neutral=0.9996, contribution=+0.2986
+  top3_max_negation_mismatch=1.0000, contribution=-0.1544
+  best_tfidf_similarity=0.0290, contribution=-0.0563
+  best_entailment_negation_mismatch=1.0000, contribution=-0.0556
+  top3_min_tokens_coverage=0.0833, contribution=+0.0278
+
+121:2 (Summary, source 15613) support=0.791320
+Claim: After serving over seven years in prison, they have been married for 10 years and have two teenage daughters.
+Chunk 0 (E=0.8465, C=0.1240, N=0.0296): Their relationship led to jail time for her, but Mary Kay Letourneau Fualaau wants the world to know that she and her husband, Vili Fualaau, are still happily together. She was a married 34-year-old teacher and mother of four in Seattle in 1996 when she began an affair with Fualaau, her 13-year-old student. Letourneau gave birth to her young lover's child and went on to serve more than seven years in prison on charges related to their sexual relationship. On Friday, ABC's "20/20" will air an exclusive interview with the couple, who will celebrate their 10th wedding anniversary on May 20. The pair wed soon after she was released from prison in 2005 and are now the parents of two
+Chunk 1 (E=0.1342, C=0.0771, N=0.7887): couple, who will celebrate their 10th wedding anniversary on May 20. The pair wed soon after she was released from prison in 2005 and are now the parents of two teen girls. According to ABC, during the interview with Barbara Walters, "Mary Kay tells Walters what makes their marriage work in spite of their huge difference in their age." "She also discusses her surprising plans to teach again, as well as her intentions to have her status as a registered sex offender lifted," a posting on the network's site says. "Vili Fualaau, meanwhile, discusses his bouts with alcoholism, depression and why he believes the system failed him while he was still a minor." Letourneau Fualaau is now 53, and her
+Chunk 2 (E=0.0647, C=0.1683, N=0.7670): "Vili Fualaau, meanwhile, discusses his bouts with alcoholism, depression and why he believes the system failed him while he was still a minor." Letourneau Fualaau is now 53, and her husband is 31.
+Largest feature contributions:
+  claim_has_numbers=1.0000, contribution=-1.9148
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  top3_max_tokens_coverage=0.6000, contribution=-1.2078
+  top3_min_numbers_unmatched=1.0000, contribution=+1.1535
+  top3_max_anchors_unmatched=1.0000, contribution=+1.0845
+  top3_max_numbers_coverage=0.6667, contribution=+0.6050
+  nli_max_neutral=0.7887, contribution=+0.4401
+  best_entailment_numbers_coverage=0.6667, contribution=+0.3317
+
+271:5 (Summary, source 15638) support=0.755540
+Claim: They have performed at various events and concerts to raise awareness and funds for their cause.
+Chunk 0 (E=0.0002, C=0.0001, N=0.9997): Laying down tracks for their debut album in the recording studio in Los Angeles, Iman Hashi, 25 and her sister Siham, 27 could not be further from their hometown of Mogadishu. The sisters were born in the Somali capital but were forced to flee after war broke out in 1991. Along with their parents, the girls relocated to Canada as refugees where during their teens they discovered a passion for music. Heading south to LA by way of Atlanta, the singing sisters with a bold flair for fashion are now embarking on a musical journey, gearing up to unleash their Afro-pop sound to the world. CNN's African Voices caught up with the sister act -- known collectively as Faarrow (combining
+Chunk 6 (E=0.0006, C=0.0002, N=0.9992): his kids live in a refugee camp.' And we did some research about Dadaab refugee camp, it's a massive camp that has taken in Sudanese refugees, Somali refugees, Rwandan refugees -- pretty much anywhere there was a conflict. Everybody fled to Dadaab. In the beginning (it was) pure advocacy talking about it on Twitter and Facebook. CNN: But then you decided to "up your game" as it were... Iman: Yes, then we started a non-profit and we'd do small benefit concerts in Toronto and in San Diego -- wherever there was a big Somali community we would do outreach but all we had was our singing, working with UNHCR in a capacity as a spokesperson. We headlined World Refugee Day
+Chunk 1 (E=0.0002, C=0.0001, N=0.9997): embarking on a musical journey, gearing up to unleash their Afro-pop sound to the world. CNN's African Voices caught up with the sister act -- known collectively as Faarrow (combining the translation of their names into English -- Iman means "Faith" and Siham means "Arrow") to talk about music, aspirations and Somalia. CNN: Hi guys, thanks for chatting with me today. What are some of your musical influences? Iman: We love Michael Jackson, Lionel Richie -- stuff my mom would listen to and play -- and the Spice Girls. We used to die for the Spice Girls. I love new artists now but I don't know if it's a nostalgia, but I remember ... my mom used to pump whatever
+Largest feature contributions:
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  nli_max_neutral=0.9997, contribution=+0.5578
+  nli_neutral=0.9992, contribution=+0.2985
+  top3_max_tokens_coverage=0.1250, contribution=-0.2516
+  top3_max_negation_mismatch=1.0000, contribution=-0.1544
+  best_tfidf_similarity=0.0305, contribution=-0.0592
+  best_entailment_tokens_coverage=0.1250, contribution=+0.0102
+  nli_entailment=0.0006, contribution=-0.0001
+
+273:1 (Summary, source 15638) support=0.671206
+Claim: Sure, here's a summary of the article in 200 words:
+Chunk 8 (E=0.0887, C=0.6309, N=0.2804): Internationally Selling Hope." We wanted to do a socially conscious brand where we sell these bracelets where it goes back to projects in Kenya or Somalia with women providing them with a sustainable income. CNN: So what's next for you two? Siham: We're actually in the mixing process right now. We still have a few (tracks) to finish up but the majority of the album is pretty much done. We want to turn it in as soon as possible so they can put together a rollout plan and get ready for the first single to drop. Iman: I don't feel like we ever lost that feeling like we're creative spokespersons for our generation as well as for Somalia. I feel
+Chunk 0 (E=0.0806, C=0.8665, N=0.0528): Laying down tracks for their debut album in the recording studio in Los Angeles, Iman Hashi, 25 and her sister Siham, 27 could not be further from their hometown of Mogadishu. The sisters were born in the Somali capital but were forced to flee after war broke out in 1991. Along with their parents, the girls relocated to Canada as refugees where during their teens they discovered a passion for music. Heading south to LA by way of Atlanta, the singing sisters with a bold flair for fashion are now embarking on a musical journey, gearing up to unleash their Afro-pop sound to the world. CNN's African Voices caught up with the sister act -- known collectively as Faarrow (combining
+Chunk 6 (E=0.0745, C=0.3199, N=0.6056): his kids live in a refugee camp.' And we did some research about Dadaab refugee camp, it's a massive camp that has taken in Sudanese refugees, Somali refugees, Rwandan refugees -- pretty much anywhere there was a conflict. Everybody fled to Dadaab. In the beginning (it was) pure advocacy talking about it on Twitter and Facebook. CNN: But then you decided to "up your game" as it were... Iman: Yes, then we started a non-profit and we'd do small benefit concerts in Toronto and in San Diego -- wherever there was a big Somali community we would do outreach but all we had was our singing, working with UNHCR in a capacity as a spokesperson. We headlined World Refugee Day
+Largest feature contributions:
+  claim_has_numbers=1.0000, contribution=-1.9148
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  top3_min_numbers_unmatched=1.0000, contribution=+1.1535
+  top3_max_anchors_unmatched=1.0000, contribution=+1.0845
+  nli_max_contradiction=0.8665, contribution=+0.3826
+  nli_max_neutral=0.6056, contribution=+0.3379
+  best_entailment_numbers_unmatched=1.0000, contribution=+0.3267
+  best_entailment_anchors_unmatched=1.0000, contribution=-0.2430
+
+315:1 (Summary, source 15645) support=0.699517
+Claim: Here is a summary of the article in 84 words or less:
+Chunk 0 (E=0.0711, C=0.8878, N=0.0411): Washington (CNN)In a broad bipartisan vote, the Senate on Tuesday gave final approval to a Medicare reform bill that includes a permanent solution to the "doc fix," a method the government has used to ensure payments to Medicare providers will keep up with inflation. The bill, which passed 92 to 8, also includes a two-year extension of a popular children's health insurance program. The issue of payments to Medicare providers has been a thorny issue for years.  Senate Finance Committee Chairman Orrin Hatch of Utah called passage of the bill a "major, major accomplishment." "Tonight, the Senate is voting to retire the outdated, inefficiency-rewarding, common sense-defying Medicare reimbursement system," said Sen. Ron Wyden of Oregon, the top Democrat on the
+Chunk 1 (E=0.1059, C=0.6225, N=0.2715): a "major, major accomplishment." "Tonight, the Senate is voting to retire the outdated, inefficiency-rewarding, common sense-defying Medicare reimbursement system," said Sen. Ron Wyden of Oregon, the top Democrat on the Finance Committee just before the final vote. The House approved the same bill overwhelmingly more than two weeks ago and President Barack Obama is expected to sign it.  Senate passage came just hours before cuts to physicians would have taken place since the last temporary "doc fix" had already expired. Some conservative senators, including Republican presidential candidate Ted Cruz of Texas, balked at the more than $200 billion price of the bill and pushed an amendment to have the costs offset. The bill, "institutionalizes and expands Obamacare policies that harm
+Chunk 2 (E=0.0819, C=0.8566, N=0.0616): Texas, balked at the more than $200 billion price of the bill and pushed an amendment to have the costs offset. The bill, "institutionalizes and expands Obamacare policies that harm patients and their doctors while adding roughly half a trillion dollars to our long-term debt within two decades," Cruz said in a statement.  "Any deal should be fully paid for and include significant and structural reforms to Medicare." But that amendment was defeated, as were several others from each party that came up for votes. Earlier, House Speaker John Boehner of Ohio warned the Senate not to change the bill. "Unless the Senate passes the House-passed 'doc fix,' significant cuts to physicians' payments will begin tomorrow," Boehner said.  "We urge
+Largest feature contributions:
+  claim_has_numbers=1.0000, contribution=-1.9148
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  top3_min_numbers_unmatched=1.0000, contribution=+1.1535
+  top3_max_anchors_unmatched=1.0000, contribution=+1.0845
+  nli_max_contradiction=0.8878, contribution=+0.3920
+  best_entailment_numbers_unmatched=1.0000, contribution=+0.3267
+  best_entailment_anchors_unmatched=1.0000, contribution=-0.2430
+  nli_contradiction=0.6225, contribution=-0.1827
+
+False negatives (showing 5 of 919)
+
+28:1 (Summary, source 15596) support=0.976065
+Claim: Three women, including Keonna Thomas of Philadelphia, were charged with attempting to join ISIS this week.
+Chunk 0 (E=0.9129, C=0.0763, N=0.0108): The FBI charged a Philadelphia woman on Thursday with trying to travel overseas to fight for ISIS. She's one of three women arrested this week on terror charges. Two New York women were also taken into custody. An FBI complaint cites numerous social media messages dating back to August 2013 that were sent by Keonna Thomas, 30, also known as "Young Lioness" and "Fatayat Al Khilafah." One Twitter message said, "If we truly knew the realities ... we all would be rushing to join our brothers in the front lines pray ALLAH accept us as shuhada [martyrs]." Another said, "When you're a mujahid [violent jihadi fighter] your death becomes a wedding." The FBI said Thomas purchased an electronic visa to
+Chunk 1 (E=0.0002, C=0.0002, N=0.9996): pray ALLAH accept us as shuhada [martyrs]." Another said, "When you're a mujahid [violent jihadi fighter] your death becomes a wedding." The FBI said Thomas purchased an electronic visa to Turkey on March 23. Turkey is known as the easiest place from which to enter Syria and join ISIS. An ISIS manual advises recruits to buy round-trip tickets to vacation spots such as Spain and then purchase tickets for their real destination once they arrive overseas, the FBI said. On March 26, Thomas purchased a ticket to Barcelona, with a March 29 departure and an April 15 return to the United States, the complaint said. It's not clear when or where she was arrested. She was charged with knowingly attempting
+Chunk 2 (E=0.0002, C=0.0002, N=0.9996): March 29 departure and an April 15 return to the United States, the complaint said. It's not clear when or where she was arrested. She was charged with knowingly attempting to provide material support and resources to a designated foreign terrorist organization. She could be sentenced to 15 years in prison. On Thursday, Noelle Velentzas, 28, and her former roommate, Asia Siddiqui, 31, were arrested in New York and accused of planning to build an explosive device for attacks in the United States, federal prosecutors said. In the past 18 months, the Justice Department's National Security Division has prosecuted or is prosecuting more than 30 cases of people attempting to travel abroad to join or provide support to terrorist groups.
+Largest feature contributions:
+  claim_has_numbers=1.0000, contribution=-1.9148
+  top3_max_tokens_coverage=0.8182, contribution=-1.6470
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  top3_max_anchors_unmatched=1.0000, contribution=+1.0845
+  top3_max_numbers_coverage=1.0000, contribution=+0.9075
+  nli_max_neutral=0.9996, contribution=+0.5578
+  best_entailment_numbers_coverage=1.0000, contribution=+0.4976
+  top3_max_evidence_unknown=1.0000, contribution=-0.4426
+
+28:2 (Summary, source 15596) support=0.941939
+Claim: Thomas purchased a ticket to Barcelona but was arrested before her trip.
+Chunk 1 (E=0.7543, C=0.2179, N=0.0278): pray ALLAH accept us as shuhada [martyrs]." Another said, "When you're a mujahid [violent jihadi fighter] your death becomes a wedding." The FBI said Thomas purchased an electronic visa to Turkey on March 23. Turkey is known as the easiest place from which to enter Syria and join ISIS. An ISIS manual advises recruits to buy round-trip tickets to vacation spots such as Spain and then purchase tickets for their real destination once they arrive overseas, the FBI said. On March 26, Thomas purchased a ticket to Barcelona, with a March 29 departure and an April 15 return to the United States, the complaint said. It's not clear when or where she was arrested. She was charged with knowingly attempting
+Chunk 0 (E=0.1081, C=0.8369, N=0.0550): The FBI charged a Philadelphia woman on Thursday with trying to travel overseas to fight for ISIS. She's one of three women arrested this week on terror charges. Two New York women were also taken into custody. An FBI complaint cites numerous social media messages dating back to August 2013 that were sent by Keonna Thomas, 30, also known as "Young Lioness" and "Fatayat Al Khilafah." One Twitter message said, "If we truly knew the realities ... we all would be rushing to join our brothers in the front lines pray ALLAH accept us as shuhada [martyrs]." Another said, "When you're a mujahid [violent jihadi fighter] your death becomes a wedding." The FBI said Thomas purchased an electronic visa to
+Chunk 2 (E=0.0229, C=0.0661, N=0.9110): March 29 departure and an April 15 return to the United States, the complaint said. It's not clear when or where she was arrested. She was charged with knowingly attempting to provide material support and resources to a designated foreign terrorist organization. She could be sentenced to 15 years in prison. On Thursday, Noelle Velentzas, 28, and her former roommate, Asia Siddiqui, 31, were arrested in New York and accused of planning to build an explosive device for attacks in the United States, federal prosecutors said. In the past 18 months, the Justice Department's National Security Division has prosecuted or is prosecuting more than 30 cases of people attempting to travel abroad to join or provide support to terrorist groups.
+Largest feature contributions:
+  top3_max_tokens_coverage=0.6667, contribution=-1.3420
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  nli_max_neutral=0.9110, contribution=+0.5083
+  best_tfidf_similarity=0.2583, contribution=-0.5021
+  best_entailment_evidence_unknown=1.0000, contribution=+0.4654
+  top3_max_evidence_unknown=1.0000, contribution=-0.4426
+  nli_max_contradiction=0.8369, contribution=+0.3695
+  nli_entailment=0.7543, contribution=-0.1764
+
+29:2 (Summary, source 15596) support=0.977545
+Claim: She was arrested on March 26 and could face 15 years in prison.
+Chunk 2 (E=0.9032, C=0.0796, N=0.0172): March 29 departure and an April 15 return to the United States, the complaint said. It's not clear when or where she was arrested. She was charged with knowingly attempting to provide material support and resources to a designated foreign terrorist organization. She could be sentenced to 15 years in prison. On Thursday, Noelle Velentzas, 28, and her former roommate, Asia Siddiqui, 31, were arrested in New York and accused of planning to build an explosive device for attacks in the United States, federal prosecutors said. In the past 18 months, the Justice Department's National Security Division has prosecuted or is prosecuting more than 30 cases of people attempting to travel abroad to join or provide support to terrorist groups.
+Chunk 1 (E=0.8950, C=0.0920, N=0.0130): pray ALLAH accept us as shuhada [martyrs]." Another said, "When you're a mujahid [violent jihadi fighter] your death becomes a wedding." The FBI said Thomas purchased an electronic visa to Turkey on March 23. Turkey is known as the easiest place from which to enter Syria and join ISIS. An ISIS manual advises recruits to buy round-trip tickets to vacation spots such as Spain and then purchase tickets for their real destination once they arrive overseas, the FBI said. On March 26, Thomas purchased a ticket to Barcelona, with a March 29 departure and an April 15 return to the United States, the complaint said. It's not clear when or where she was arrested. She was charged with knowingly attempting
+Chunk 0 (E=0.0287, C=0.0888, N=0.8825): The FBI charged a Philadelphia woman on Thursday with trying to travel overseas to fight for ISIS. She's one of three women arrested this week on terror charges. Two New York women were also taken into custody. An FBI complaint cites numerous social media messages dating back to August 2013 that were sent by Keonna Thomas, 30, also known as "Young Lioness" and "Fatayat Al Khilafah." One Twitter message said, "If we truly knew the realities ... we all would be rushing to join our brothers in the front lines pray ALLAH accept us as shuhada [martyrs]." Another said, "When you're a mujahid [violent jihadi fighter] your death becomes a wedding." The FBI said Thomas purchased an electronic visa to
+Largest feature contributions:
+  claim_has_numbers=1.0000, contribution=-1.9148
+  top3_max_tokens_coverage=0.8333, contribution=-1.6775
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  top3_max_anchors_unmatched=1.0000, contribution=+1.0845
+  top3_max_numbers_coverage=1.0000, contribution=+0.9075
+  top3_max_month_days_coverage=1.0000, contribution=-0.9023
+  best_entailment_specific_date_with_unknown=1.0000, contribution=-0.6932
+  nli_max_neutral=0.8825, contribution=+0.4924
+
+44:1 (Summary, source 15599) support=0.899311
+Claim: Blue Bell Ice Cream Recalls Products Amid Listeria Outbreak; No Blue Bell Ice Cream Is Linked to Infections in Patients
+Chunk 0 (E=0.2355, C=0.7255, N=0.0389): Blue Bell ice cream has temporarily shut down one of its manufacturing plants over the discovery of listeria contamination in a serving of ice cream originating from that plant. Public health officials warned consumers Friday not to eat any Blue Bell-branded products made at the company's Broken Arrow, Oklahoma, plant. That includes 3-ounce servings of Blue Bell ice cream from this plant that went to institutions in containers marked with the letters O, P, Q, R, S or T behind the coding date. The warning by the Centers for Disease Control and Prevention does not affect other Blue Bell ice cream, including other 3-ounce servings, not made at the plant. But Blue Bell has recalled other products. The company is
+Chunk 4 (E=0.0698, C=0.9241, N=0.0061): cup servings to the recall. Five people were infected and three died in the past year in Kansas from listeria that might be linked to Blue Bell Creameries products, according to the CDC. All five of them were hospitalized at the same hospital before developing listeriosis, the CDC said. At least four of them had consumed milkshakes made with Blue Bell ice cream before developing the infection. "We are devastated and know that Blue Bell has to be and can be better than this," Paul Kruse, Blue Bell CEO and president, said in a statement. "Quality and safety have always been our top priorities. We are deeply saddened and concerned for all those who have been affected." The CDC advises
+Chunk 1 (E=0.0653, C=0.9281, N=0.0066): Control and Prevention does not affect other Blue Bell ice cream, including other 3-ounce servings, not made at the plant. But Blue Bell has recalled other products. The company is shutting down the Broken Arrow facility "out of an abundance of caution" to search for a possible cause of contamination. It is the third time Blue Bell has taken action in light of a listeria outbreak at a Kansas hospital that served the company's ice cream. Listeria monocytogenes was recently found in a cup of ice cream recovered from the hospital. The cup contaminated with the bacteria was produced at the Broken Arrow plant in April 2014, Blue Bell said. And, according to the CDC, listeria bacteria was found in
+Largest feature contributions:
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  top3_max_tokens_coverage=0.5385, contribution=-1.0839
+  best_tfidf_similarity=0.2233, contribution=-0.4341
+  nli_max_contradiction=0.9281, contribution=+0.4098
+  best_entailment_names_unmatched=1.0000, contribution=+0.2507
+  nli_contradiction=0.7255, contribution=-0.2129
+  claim_negation=1.0000, contribution=+0.2021
+  top3_max_negation_mismatch=1.0000, contribution=-0.1544
+
+46:5 (Summary, source 15599) support=0.904275
+Claim: No illnesses have been reported directly linked to the contaminated ice cream, but five people in Kansas have died from listeriosis in the past year after consuming Blue Bell products.
+Chunk 3 (E=0.8333, C=0.1213, N=0.0455): samples taken from patients who came down with listeriosis between 2010 and 2014 in a hospital that served 3-ounce Blue Bell cups matched the listeria in recovered samples. None of this means the ice cream is the source of either spate of the infections. "Investigation to determine whether these illnesses are related to exposure to Blue Bell products is ongoing," the CDC said. In early March, in light of the Kansas listeria outbreak, Blue Bell recalled a group of products made at a plant in Texas. It later added 3-ounce cup servings to the recall. Five people were infected and three died in the past year in Kansas from listeria that might be linked to Blue Bell Creameries products, according
+Chunk 4 (E=0.0749, C=0.9166, N=0.0085): cup servings to the recall. Five people were infected and three died in the past year in Kansas from listeria that might be linked to Blue Bell Creameries products, according to the CDC. All five of them were hospitalized at the same hospital before developing listeriosis, the CDC said. At least four of them had consumed milkshakes made with Blue Bell ice cream before developing the infection. "We are devastated and know that Blue Bell has to be and can be better than this," Paul Kruse, Blue Bell CEO and president, said in a statement. "Quality and safety have always been our top priorities. We are deeply saddened and concerned for all those who have been affected." The CDC advises
+Chunk 0 (E=0.0011, C=0.0009, N=0.9980): Blue Bell ice cream has temporarily shut down one of its manufacturing plants over the discovery of listeria contamination in a serving of ice cream originating from that plant. Public health officials warned consumers Friday not to eat any Blue Bell-branded products made at the company's Broken Arrow, Oklahoma, plant. That includes 3-ounce servings of Blue Bell ice cream from this plant that went to institutions in containers marked with the letters O, P, Q, R, S or T behind the coding date. The warning by the Centers for Disease Control and Prevention does not affect other Blue Bell ice cream, including other 3-ounce servings, not made at the plant. But Blue Bell has recalled other products. The company is
+Largest feature contributions:
+  claim_has_numbers=1.0000, contribution=-1.9148
+  top3_max_tokens_coverage=0.6667, contribution=-1.3420
+  retrieved_chunk_fraction=1.0000, contribution=-1.2643
+  top3_max_anchors_unmatched=1.0000, contribution=+1.0845
+  top3_max_numbers_coverage=1.0000, contribution=+0.9075
+  best_tfidf_similarity=0.3196, contribution=-0.6213
+  nli_max_neutral=0.9980, contribution=+0.5569
+  best_entailment_numbers_coverage=1.0000, contribution=+0.4976

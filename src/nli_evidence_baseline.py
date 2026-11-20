@@ -49,6 +49,7 @@ def retrieve_pairs(vectorizer, claims, chunks_by_source):
     retrieved = [[] for _ in claims]
     for chunks, indices, similarities in source_similarities(vectorizer, claims, chunks_by_source):
         for index, scores in zip(indices, similarities):
+            claims[index]["max_similarity"] = float(scores.max())
             # Stable sorting resolves similarity ties by the original chunk index.
             for chunk_index in np.argsort(-scores, kind="stable")[:TOP_K]:
                 chunk_index = int(chunk_index)
@@ -112,17 +113,17 @@ def evaluate(claims, score_field):
     }
 
 
-def read_tfidf_predictions(test):
-    path = RESULTS_DIR / "tfidf_test_predictions.csv"
+def read_baseline_predictions(test, filename):
+    path = RESULTS_DIR / filename
     with path.open(encoding="utf-8", newline="") as file:
         rows = list(csv.DictReader(file))
     baseline = {row["claim_id"]: row for row in rows}
     if len(baseline) != len(rows) or len(rows) != len(test):
-        raise ValueError("TF-IDF predictions must cover the same unique test claims")
+        raise ValueError(f"{filename} must cover the same unique test claims")
     for claim in test:
         row = baseline.get(claim["claim_id"])
         if row is None or any(row[key] != str(claim[key]) for key in (*CLAIM_FIELDS, "true_label")):
-            raise ValueError(f"TF-IDF test prediction mismatch for {claim['claim_id']}")
+            raise ValueError(f"{filename} test prediction mismatch for {claim['claim_id']}")
     return rows
 
 
@@ -221,7 +222,7 @@ def main():
     print(f"Frozen validation threshold: {threshold!r} (F1 {best['f1']:.6f}).", flush=True)
 
     test, test_chunks = load_split("test", seen_sources)
-    baseline = read_tfidf_predictions(test)
+    baseline = read_baseline_predictions(test, "tfidf_test_predictions.csv")
     retrieved = verify_split("test", vectorizer, test, test_chunks,
                              model, tokenizer, label_ids, args.batch_size)
     for claim in test:

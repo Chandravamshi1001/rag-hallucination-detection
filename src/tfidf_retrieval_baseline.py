@@ -79,7 +79,17 @@ def load_split(split, seen_sources):
     return claims, chunks_by_source
 
 
-def score_claims(vectorizer, claims, chunks_by_source):
+def fit_vectorizer(chunks_by_source):
+    vectorizer = TfidfVectorizer(
+        lowercase=False, ngram_range=(1, 2),
+        token_pattern=r"(?u)\b\w+(?:[’']\w+)*\b",
+        stop_words=None, norm="l2",
+    )
+    vectorizer.fit(chunk for chunks in chunks_by_source.values() for chunk in chunks)
+    return vectorizer
+
+
+def source_similarities(vectorizer, claims, chunks_by_source):
     claim_vectors = vectorizer.transform(claim["claim_text"] for claim in claims)
     indices_by_source = defaultdict(list)
     for index, claim in enumerate(claims):
@@ -90,6 +100,11 @@ def score_claims(vectorizer, claims, chunks_by_source):
         chunk_vectors = vectorizer.transform(chunks)
         # L2-normalized TF-IDF makes the dot product equal to cosine similarity.
         similarities = (claim_vectors[indices] @ chunk_vectors.T).toarray()
+        yield chunks, indices, similarities
+
+
+def score_claims(vectorizer, claims, chunks_by_source):
+    for chunks, indices, similarities in source_similarities(vectorizer, claims, chunks_by_source):
         for index, scores in zip(indices, similarities):
             best = int(scores.argmax())
             claims[index].update(
@@ -99,10 +114,10 @@ def score_claims(vectorizer, claims, chunks_by_source):
             )
 
 
-def labels_and_scores(claims):
+def labels_and_scores(claims, score_field="max_similarity"):
     return (
         np.array([claim["true_label"] == UNSUPPORTED for claim in claims], dtype=bool),
-        np.array([claim["max_similarity"] for claim in claims], dtype=float),
+        np.array([claim[score_field] for claim in claims], dtype=float),
     )
 
 
@@ -117,8 +132,8 @@ def classification_metrics(tn, fp, fn, tp):
     }
 
 
-def validation_thresholds(claims):
-    labels, scores = labels_and_scores(claims)
+def validation_thresholds(claims, score_field="max_similarity"):
+    labels, scores = labels_and_scores(claims, score_field)
     positives = int(labels.sum())
     negatives = len(labels) - positives
     if not positives or not negatives:
@@ -191,12 +206,7 @@ def write_csv(path, rows, fields):
 def main():
     seen_sources = set()
     train, train_chunks = load_split("train", seen_sources)
-    vectorizer = TfidfVectorizer(
-        lowercase=False, ngram_range=(1, 2),
-        token_pattern=r"(?u)\b\w+(?:[’']\w+)*\b",
-        stop_words=None, norm="l2",
-    )
-    vectorizer.fit(chunk for chunks in train_chunks.values() for chunk in chunks)
+    vectorizer = fit_vectorizer(train_chunks)
     # Score training claims as well, without using their labels or scores to tune.
     score_claims(vectorizer, train, train_chunks)
     train_count = len(train)

@@ -1,0 +1,31 @@
+RAGTruth NLI evidence-verification baseline
+Model: Sayan01/tiny-bert-mnli-distilled on CPU (4 threads, batch size 16).
+Label mapping: {0: 'entailment', 1: 'neutral', 2: 'contradiction'}
+TF-IDF fits training context only and retrieves up to three chunks per claim from its own source. NLI receives only each chunk and claim as input.
+Neutral means that the evidence does not establish the claim. Neutral and contradiction both count as unsupported in the binary task.
+Support is the maximum entailment probability. Contradiction is reported separately.
+Prediction is unsupported when support is strictly below the frozen cutoff.
+Best validation threshold: 0.5553138852119447
+Best validation F1: 0.254931 (10,932 claims).
+Validation ties use the smallest threshold. ROC-AUC uses negative support for NLI and negative similarity for TF-IDF.
+Confusion matrices use true rows, predicted columns, and supported first.
+
+Overall (18,969 claims)
+Model        Accuracy  Precision     Recall         F1    ROC-AUC  Confusion matrix
+TF-IDF       0.699141   0.148142   0.559615   0.234268   0.688962  [[12389, 5020], [687, 873]]
+NLI          0.698245   0.134095   0.489103   0.210483   0.669124  [[12482, 4927], [797, 763]]
+
+QA (5,737 claims)
+Model        Accuracy  Precision     Recall         F1    ROC-AUC  Confusion matrix
+TF-IDF       0.845215   0.118421   0.221311   0.154286   0.731413  [[4768, 603], [285, 81]]
+NLI          0.781942   0.149644   0.516393   0.232044   0.748752  [[4297, 1074], [177, 189]]
+
+Summary (5,002 claims)
+Model        Accuracy  Precision     Recall         F1    ROC-AUC  Confusion matrix
+TF-IDF       0.872251   0.069977   0.120155   0.088445   0.621233  [[4332, 412], [227, 31]]
+NLI          0.762095   0.091944   0.406977   0.150000   0.656271  [[3707, 1037], [153, 105]]
+
+Data2txt (8,230 claims)
+Model        Accuracy  Precision     Recall         F1    ROC-AUC  Confusion matrix
+TF-IDF       0.492102   0.159673   0.813034   0.266924   0.669971  [[3289, 4005], [175, 761]]
+NLI          0.601094   0.142770   0.501068   0.222222   0.589033  [[4478, 2816], [467, 469]]

@@ -1,2 +1,4 @@
 pandas
 scikit-learn
+torch>=2.6
+transformers>=4.48,<5
